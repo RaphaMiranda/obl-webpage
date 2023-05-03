@@ -211,18 +211,27 @@ body .progress_inner__bar--set {
   position: relative;
   z-index: -2;
 }
-body .progress_inner__tabs .tab {
+.progress_inner__tabs {
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.progress_inner__tabs .tab {
   opacity: 0;
   position: absolute;
   top: 40px;
   text-align: center;
+  align-items: center;
   margin-top: 80px;
   box-shadow: 0px 2px 6px #2e7cf1;
   padding: 30px;
   background: white;
   border-radius: 10px;
   transition: all 0.2s;
+  min-width: 250px;
 }
+
 body .progress_inner__tabs .tab h2 {
   margin: 0;
   color: #04499F;

@@ -615,6 +615,12 @@ body.mobile-nav-open .nav__mobile-nav {
   .speed .section__img {
     margin-right: 1.5em;
   }
+  .section__img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
   .img-screen-ui {
     width: 500px;
     display: block;
@@ -661,4 +667,26 @@ body.mobile-nav-open .nav__mobile-nav {
   h2 {
     font-size: 3.5em;
   } */
+}
+
+@media screen and (min-width: 561px) and (max-width: 768px) {
+  .section__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section__img {
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .section__container {
+    display: block;
+  }
+
+  .section__img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 }
