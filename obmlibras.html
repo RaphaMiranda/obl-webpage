@@ -7,14 +7,16 @@
   <link rel="stylesheet" href="./stylesheets/style.css" />
   <link rel="stylesheet" href="./stylesheets/timeline.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="./imgs/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon">
   <title>OBMLibras</title>
 </head>
 
 <body>
   <nav class="nav">
     <div class="nav__container container">
-      <div class="nav__left">
-        <button class="nav__hamburger" aria-label="Menu"></button>
+     <button class="nav__hamburger" aria-label="Menu"></button>
+     <div class="nav__left">
         <ul class="nav__nav-desktop">
           <li class="nav__desktop-item">
             <a href="obmlibras.html" title="OBMLibras" class="nav__desktop-link">
@@ -35,17 +37,14 @@
             </a>
           </li>
         </ul>
-
-        <span class="nav__logo-name">OBM Libras</span>
       </div>
       <div class="nav__right">
-        <button class="nav__hamburger" aria-label="Menu"></button>
         <ul class="nav__nav-desktop">
           <li class="nav__desktop-item">
-            <a href="#" class="btn btn-secondary nav__desktop-link">Embaixadores</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcUIUwEiphQA01ILTI25zqDkeJ21Hsngez9KA2eLk9L1pzQQ/viewform" class="btn btn-secondary nav__desktop-link">Embaixadores</a>
           </li>
           <li class="nav__desktop-item">
-            <a href="#" class="btn nav__desktop-link">Inscrições</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeymvAetx7G3yOt6Zr1a9Mlj9nzfbcKMk3n0E6NnrDCimSyHA/viewform" class="btn nav__desktop-link">Inscrições</a>
           </li>
         </ul>
       </div>
@@ -55,10 +54,10 @@
       <div class="nav__mobile-nav container">
         <ul class="nav__mobile-links">
           <li class="nav__mobile-item">
-            <a href="#" class="nav__mobile-link">Inscrições</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcUIUwEiphQA01ILTI25zqDkeJ21Hsngez9KA2eLk9L1pzQQ/viewform" class="nav__mobile-link">Inscrições</a>
           </li>
           <li class="nav__mobile-item">
-            <a href="#" class="nav__mobile-link">Embaixadores</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeymvAetx7G3yOt6Zr1a9Mlj9nzfbcKMk3n0E6NnrDCimSyHA/viewform" class="nav__mobile-link">Embaixadores</a>
           </li>
         </ul>
       </div>
@@ -73,12 +72,12 @@
         </picture>
       </div>
       <div class="header__text">
-        <h1 class="header__heading-text">
+        <h1 class="titulo-olimpiada">
           OBMLibras
           <span class="highlighted">2023</span>
         </h1>
-        <p class="header__text-text">
-          2ª Olimpíada Brasileira de Matemática de testes blabla 2
+        <p class="subtitulo-olimpiada">
+          2ª Olimpíada Brasileira de Matemática em Libras
         </p>
 
         <div class="btn-group">
@@ -100,7 +99,7 @@
             Sobre nós
           </h2>
           <p align="justify" class="section__text">
-            TESTE: Olimpíada Brasileira de Matemática em Libras (OBMLibras)
+            Olimpíada Brasileira de Matemática em Libras (OBMLibras)
             é a primeira e única competição científica de âmbito nacional
             completamente em Libras, Língua Brasileira de Sinais.
             A prova é anualmente oferecida em escolas públicas e privadas com
@@ -180,30 +179,30 @@
     <section class="section niveis white-background">
       <h2 class="section__heading text-centered red-red">Níveis</h2>
       <div class="section__container container" data-aos="fade-up">
-        <div class="section__img centered">
+        <div class="section__img__niveis">
           <picture>
             <source media="(max-width : 560px)" srcset="./imgs/nivel-1.png" />
-            <img class="img-screen-ui" loading="lazy" src="./imgs/nivel-1.png" alt="Imagem: Nivel-1 Mobile" />
+            <img class="section__img__niveis" loading="lazy" src="./imgs/nivel-1.png" alt="Imagem: Nivel-1 Mobile" />
           </picture>
         </div>
-        <div class="section__img centered">
+        <div class="section__img__niveis">
           <picture>
             <source media="(max-width : 560px)" srcset="./imgs/nivel-2.png" />
-            <img class="img-screen-ui" loading="lazy" src="./imgs/nivel-2.png" alt="Imagem: Nivel-2 Mobile" />
+            <img class="section__img__niveis" loading="lazy" src="./imgs/nivel-2.png" alt="Imagem: Nivel-2 Mobile" />
           </picture>
         </div>
       </div>
     </section>
 
-    <section class="section edicao-passada orange-background" id="sec2022">
+    <section class="section__edicao-passada orange-background" id="sec2022">
       <h2 class="section__heading text-centered">Edição 2022</h2>
       <div class="section__container container" data-aos="fade-up">
         <div class="section__text-content">
           <h3 class="white">Primeira Edição da OBMLibras</h3>
           <h3 class="white">Cerimônia de Abertura</h3>
           <p>A Matemática na Libras: Experiências de Matemáticos Surdos</p>
-          <img class="section__text-convidados" loading="lazy" src="./imgs/convidados.png" alt="Convidados do evento" />
-          <p class="section__text-convidados text-centered">Convidados: Prof. Zanúbia Dada, Prof. Júnior, Estudante Matheus</p>
+          <img class="section__text-convidados__img" loading="lazy" src="./imgs/convidados.png" alt="Convidados do evento" />
+          <p class="section__text-convidados">Convidados: Prof. Zanúbia Dada, Prof. Júnior, Estudante Matheus</p>
           <h3 class="white"> </h3>
           <h3 class="white">Resultados</h3>
           <p class="low-bot">386 alunos, em sua maioria dos estados de SP, MA, ES, GO e RJ</p>
@@ -220,7 +219,7 @@
     </section>
 
     <section class="section premios yellow-background">
-      <h2 class="section__heading text-centered navy-blue">Vencedores - Edição 2022</h2>
+      <h2 class="section__heading__premios text-centered navy-blue">Vencedores 2022</h2>
       <div class="section__container__premios container" data-aos="fade-up">
         <h3 class="black text-centered">Ensino Fundamental (6º e 7º ano)</h3>
         <div class="section__img">
@@ -254,12 +253,12 @@
           </h2>
           <div class="centered">
             <picture>
-              <source media="(max-width: 10px)" srcset="./imgs/logo-sinaliza.png" />
-              <img loading="lazy" src="./imgs/logo-sinaliza.png" alt="Logotipo Sinaliza Enem"/>
+              <source media="(max-width: 8px)" srcset="./imgs/logo-sinaliza.png" />
+              <img class="section__apoio__img" loading="lazy" src="./imgs/logo-sinaliza.png" alt="Logotipo Sinaliza Enem"/>
             </picture>
             <picture>
-              <source media="(max-width: 30px)" srcset="./imgs/logo-mapa-edu.png" />
-              <img loading="lazy" src="./imgs/logo-mapa-edu.png" alt="Logotipo Mapa Educação" />
+              <source media="(max-width: 8px)" srcset="./imgs/logo-mapa-edu.png" />
+              <img class="section__apoio__img" loading="lazy" src="./imgs/logo-mapa-edu.png" alt="Logotipo Mapa Educação" />
             </picture>
           </div>
         </div>
@@ -269,8 +268,8 @@
           </h2>
           <div class="centered">
             <picture>
-              <source media="(max-width: 5px)" srcset="./imgs/logocasa.jpg" width="100" />
-              <img loading="lazy" src="./imgs/logo-casa-desc.jpg" alt="Logotipo Casa da Descoberta"  />
+              <source media="(max-width: 3px)" srcset="./imgs/logocasa.jpg" width="100" />
+              <img class="section__apoio__img" loading="lazy" src="./imgs/logo-casa-desc.jpg" alt="Logotipo Casa da Descoberta"  />
             </picture>
           </div>
         </div>
@@ -281,10 +280,10 @@
 
   <footer class="section footer footer-black-background">
     <section class="footer__container container red-red ">
-      <div id="comp-lag4b8fs" class="MazNVa comp-lag4b8fs wixui-image" title="Favicon">
+      <div id="comp-lag4b8fs" class="" title="Favicon">
         <div>
           <img
-            src="https://static.wixstatic.com/media/0b6a15_1d789814850949e58238709848ee766e~mv2.png/v1/fill/w_116,h_116,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0b6a15_1d789814850949e58238709848ee766e~mv2.png"
+            src="./imgs/favicon.png"
             alt="Logo da Sinaliza"
             style="width: 116px; height: 116px; object-fit: cover; object-position: 50% 50%; margin-right: 8em;"
             fetchpriority="high">
@@ -300,9 +299,6 @@
             <a href="https://mapaeducacao.com/" class="footer__link">Mapa Educação</a>
           </li>
           <li class="footer__links-item">
-            <a href="edicoesanteriores.html" class="footer__link">Edições Anteriores</a>
-          </li>
-          <li class="footer__links-item">
             <a href="provasantigas.html" class="footer__link">Provas Antigas</a>
           </li>
         </ul>
@@ -312,14 +308,13 @@
         <p class="footer__links-heading">Documentos</p>
         <ul class="footer__links-list">
           <li class="footer__links-item">
-            <a href="./docs/regulamento-obm.pdf" class="footer__link" target="_blank">Regulamento</a>
+            <a href="https://docs.google.com/document/d/1HS4_Hs7mdRcrJisq1uYt9j5K2AAkZw_F/edit?usp=sharing&ouid=109657972846364934891&rtpof=true&sd=true" class="footer__link" target="_blank">Regulamento</a>
           </li>
           <li class="footer__links-item">
             <a href="https://www.sinalizaenem.com.br/termos-de-uso" class="footer__link">Termos de Uso</a>
           </li>
           <li class="footer__links-item">
-            <a href="https://www.sinalizaenem.com.br/politica-de-privacidade" class="footer__link">Política de
-              Privacidade</a>
+            <a href="https://www.sinalizaenem.com.br/politica-de-privacidade" class="footer__link">Privacidade</a>
           </li>
         </ul>
       </article>
