@@ -417,9 +417,7 @@ body.mobile-nav-open .nav__mobile-nav {
 
 
 
-
 /* btns */
-
 .btn {
   background: var(--prim-color);
   color: var(--white);
@@ -520,16 +518,9 @@ body.mobile-nav-open .nav__mobile-nav {
     justify-content: center;
     margin-bottom: 1em;
     margin-top: 2em;
+    max-width: 100%; /* Set maximum width to 100% */
   }
 }
-
-
-
-
-
-
-
-
 
 
 /* sections */
@@ -594,8 +585,11 @@ body.mobile-nav-open .nav__mobile-nav {
   margin-top: auto;
   text-align: left;
 }
-. section__apoio__img {
-  width: 10px;
+/* Arrumei para poder trocar o tamanho da imagem por essa classe */
+.section__apoio__img {
+  max-width: 200px;  /* Define o tamanho máximo para ocupar a largura disponível */
+  height: auto; /* Mantém a proporção original */
+  margin: 0 10px;
 }
 .features {
   display: flex;
@@ -654,10 +648,11 @@ body.mobile-nav-open .nav__mobile-nav {
 .realizacao-title{
   font-size: 2em;
 }
-.realizacao img{
+
+/* .realizacao img{
   max-width: 200px;
   margin: 0 10px;
-}
+} */
 /* Center the image within the section__img div */
 .realizacao .centered {
   display: flex;
@@ -719,16 +714,8 @@ body.mobile-nav-open .nav__mobile-nav {
 }
 }
 
-
-
-
-
-
-
-
-
-
 /* Footer */
+
 .footer ul,
 .footer ol {
   list-style: none;
@@ -765,34 +752,63 @@ body.mobile-nav-open .nav__mobile-nav {
   font-family: Kollektif;
   text-align: center;
   align-items: center;
-  
+}
+.footer__img_div {
+  display: flex;
+  justify-content: center;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+.footer__img_div img{
+  width: 116px; 
+  height: 116px; 
+  object-fit: cover; 
+  object-position: 50% 50%; 
+  margin-right: 8em;
 }
 
 
 /*celular */
-
 @media screen and (max-width: 767px) {
+  .footer__img_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+  .footer__img_div img{
+    width: 40%;
+    height: auto;
+    align-items: center;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin-right: 0;
+  }
+
+  /* Layout para os <articles> */
   .footer__container {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .footer__links {
+    flex-basis: 25%;
+    flex-grow: 1;
     margin-bottom: 3em;
     font-size: 0.8em;
-    flex: 1 1 10px;
-    width: 25%;
+    text-align: center; /* Centralizar o texto */
   }
   .footer__links-heading {
     margin-bottom: 0.5em;
-    margin-top: 10em;
+    margin-top: 1.2em;
     font-size: 1.2em;
+    text-align: center; /* Centralizar o texto */
   }
   .footer__frase {
     font-size: 0.6em;
   }
 }
-
 
 /*tablet */
 
