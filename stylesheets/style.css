@@ -587,7 +587,7 @@ body.mobile-nav-open .nav__mobile-nav {
 }
 /* Arrumei para poder trocar o tamanho da imagem por essa classe */
 .section__apoio__img {
-  max-width: 200px;  /* Define o tamanho máximo para ocupar a largura disponível */
+  max-width: 201px;  /* Define o tamanho máximo para ocupar a largura disponível */
   height: auto; /* Mantém a proporção original */
   margin: 0 10px;
 }
