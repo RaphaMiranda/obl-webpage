@@ -54,10 +54,36 @@
       <div class="nav__mobile-nav container">
         <ul class="nav__mobile-links">
           <li class="nav__mobile-item">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcUIUwEiphQA01ILTI25zqDkeJ21Hsngez9KA2eLk9L1pzQQ/viewform" class="nav__mobile-link">Inscrições</a>
+            <a href="obalibras.html" title="OBALibras" class="nav__mobile-link">
+              <div class="nav__mobile-item-content">
+                <img width="50" height="50" viewBox="0 0 30 50" fill="none" class="nav__mobile-logo" src="./imgs/logo-oba.png" />
+                <span class="nav__item-texto">OBALibras</span>
+              </div>
+            </a>
           </li>
           <li class="nav__mobile-item">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeymvAetx7G3yOt6Zr1a9Mlj9nzfbcKMk3n0E6NnrDCimSyHA/viewform" class="nav__mobile-link">Embaixadores</a>
+            <a href="obflibras.html" title="OBFLibras" class="nav__mobile-link">
+              <div class="nav__mobile-item-content">
+                <img width="50" height="50" viewBox="0 0 30 50" fill="none" class="nav__mobile-logo" src="./imgs/logo-obf.png" />
+                <span class="nav__item-texto">OBFLibras</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav__mobile-item">
+            <a href="obflhttps://docs.google.com/forms/d/e/1FAIpQLSdcUIUwEiphQA01ILTI25zqDkeJ21Hsngez9KA2eLk9L1pzQQ/viewform" title="Inscrições" class="nav__mobile-link">
+              <div class="nav__mobile-item-content">
+                <img width="50" height="50" viewBox="0 0 30 50" fill="none" class="nav__mobile-logo" src="./imgs/logo-obm.png" />
+                <span class="nav__item-texto">Inscrições</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav__mobile-item">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeymvAetx7G3yOt6Zr1a9Mlj9nzfbcKMk3n0E6NnrDCimSyHA/viewform" title="Embaixadores" class="nav__mobile-link">
+              <div class="nav__mobile-item-content">
+                <img width="50" height="50" viewBox="0 0 30 50" fill="none" class="nav__mobile-logo" src="./imgs/logo-obm.png" />
+                <span class="nav__item-texto">Embaixadores</span>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -357,13 +383,13 @@
     // FIXME: Find a better way to close modal when body is clicked
     function closeMobileMenu(e) {
       console.log(
-        e.target.classList.contains("nav__mobiile-item") ||
+        e.target.classList.contains("nav__mobile-item") ||
         e.target.classList.contains("nav__hamburger") ||
         e.target.classList.contains("nav__container")
       );
       if (
         isModalOpen() &&
-        (e.target.classList.contains("nav__mobiile-item") ||
+        (e.target.classList.contains("nav__mobile-item") ||
           e.target.classList.contains("nav__hamburger"))
       )
         return;
