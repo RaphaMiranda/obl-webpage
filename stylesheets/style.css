@@ -191,6 +191,7 @@ hr {
 }
 .nav__mobile-logo {
   margin-right: 10px;
+  width: auto;
 }
 .nav__mobile-link:hover,
 .nav__mobile-link:active {
