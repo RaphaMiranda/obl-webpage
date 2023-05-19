@@ -12,7 +12,6 @@
   <title>OBLibras</title>
 </head>
 
-
 <body>
   <nav class="nav">
     <div class="nav__container container">
@@ -98,65 +97,7 @@
     </div>
   </nav>
   
-  
 
-  <header class="index">
-    <h1 class="index__sub">OBLibras</h1>
-    <h1 class="index__subsub">OLIMPÍADAS BRASILEIRAS EM LIBRAS</h1>
-  </header>
-  
-  <p class="index__footer">2023 • Sinaliza Enem • CNPJ 39.551.094/0001-22 • Rio de Janeiro, Brasil</p>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
-    var hamburger = document.querySelector(".nav__hamburger");
-    var body = document.querySelector("body");
-    var mobileNavigation = document.querySelector(".nav__mobile-nav");
-
-    AOS.init();
-
-    function toggleMobileNav(e) {
-      body.classList.toggle("mobile-nav-open");
-    }
-
-    function isModalOpen() {
-      return body.classList.contains("mobile-nav-open") ? true : false;
-    }
-
-    // FIXME: Find a better way to close modal when body is clicked
-    function closeMobileMenu(e) {
-      console.log(
-        e.target.classList.contains("nav__mobiile-item") ||
-        e.target.classList.contains("nav__hamburger") ||
-        e.target.classList.contains("nav__container")
-      );
-      if (
-        isModalOpen() &&
-        (e.target.classList.contains("nav__mobiile-item") ||
-          e.target.classList.contains("nav__hamburger"))
-      )
-        return;
-
-      body.classList.remove("mobile-nav-open");
-    }
-
-    window.addEventListener("click", closeMobileMenu);
-
-    hamburger.addEventListener("click", toggleMobileNav);
-  </script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89929831-11"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "UA-89929831-11");
-  </script>
 </body>
 
 </html>
