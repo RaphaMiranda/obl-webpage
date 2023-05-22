@@ -300,16 +300,21 @@ body.mobile-nav-open .nav__mobile-nav {
   background-image: url("../imgs/fundo-oba.jpg");
   background-repeat: no-repeat;
   background-size: 2100px 700px;
+  margin-top: 100px;
 }
 .obm {
   background-color: #ffffff;
-  background-image: url("../imgs/fundo-obm.png");
+  background-image: url("../imgs/fundo-obm.webp");
   background-repeat: no-repeat;
+  background-size: 2100px 700px;
+  margin-top: 100px;
 }
 .obf {
   background-color: #ffffff;
   background-image: url("../imgs/fundo-obf.jpg");
   background-repeat: no-repeat;
+  background-size: 2100px 700px;
+  margin-top: 100px;
 }
 .highlighted {
   color: var(--prim-color);
